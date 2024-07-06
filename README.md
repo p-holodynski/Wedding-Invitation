@@ -1,4 +1,4 @@
-# Wedding Landing Page - Daeng Sherly Menikah
+# Wedding Landing Page - Patryk Holodynski
 
 ![Thumbnail](/image/thumbnail-web-sherly-daeng-menikah.png)
 
@@ -29,5 +29,5 @@
 
 
 # Credits
-
+- Based on website created by Daeng Sherly Menikah - https://github.com/daengdoang/daeng-sherly-menikah
 - Floral vector created by BiZkettE1 - www.freepik.com (https://www.freepik.com/free-photos-vectors/background)# wedding-invitation
