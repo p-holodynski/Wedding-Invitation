@@ -22,10 +22,8 @@ html {
 .navbar-item {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
   letter-spacing: 1px;
   font-size: 1rem;
-  box-shadow:  ;
 }
 
 .navbar-item.is-active{
@@ -33,9 +31,8 @@ html {
 }
 
 .a.navbar-item{
-  font-color: #996E6D;
+  color: #996E6D;
 }
-
 
 .hero {
   background-image: url(https://picsum.photos/id/25/1920/1080);
@@ -46,8 +43,6 @@ html {
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
 }
-
-
 
 .hero .title {
   font-family: 'Rouge Script', sans-serif;
@@ -67,7 +62,6 @@ html {
 .hero .tempatwaktu {
   padding-top: 35px;
   font-size: 1.3rem;
-  
 }
 
 .hero .hero-foot {
@@ -90,7 +84,6 @@ html {
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
   line-height: 38px;
   font-weight: 600;
-  text-transform: ;
   letter-spacing: 1px;
   font-size: 1rem;
 }
@@ -114,7 +107,6 @@ html {
   transition: all .2s ease-in-out;
   border-bottom: 2px solid #c28285;
 }
-
 
 .space40px{
   height: 40px;
@@ -143,7 +135,6 @@ html {
 .main-content .section-dark.resume {
   height: 400px;
   padding-top: 60px;
-
 }
 
 @media (max-width: 599px) {
@@ -319,7 +310,7 @@ vertical-align: middle;
   font-size: 18px;
 }
 
-.waktu {
+.time {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
 }
@@ -334,10 +325,8 @@ vertical-align: middle;
 .tempat {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
-  font-size: ;
   margin-bottom: 50px;
 }
-
 
 .has-vertically-align {
   vertical-align: middle;
@@ -362,12 +351,11 @@ vertical-align: middle;
   vertical-align: middle;
 }
 
-
 .main-content .no-padding-top {
   padding-top: 0px;
 }
 
-.footer img{
+.footer img {
   margin: 10px 0px 10px 10px;
   display: inline-block;
   max-height: 24px;
@@ -383,9 +371,9 @@ vertical-align: middle;
 }
 
 .divider {
-  margin: 40px 25px;
+  margin: 25px;
   display: inline-block;
-  max-height: 60px;
+  max-height: 120px;
   vertical-align: middle;
 }
 
@@ -456,7 +444,6 @@ body.preloader-site {
   width: 120px;
 }
 
-
 .btn-whatsapp:hover {
   color: white;
   background-color: #59a543;
@@ -468,7 +455,6 @@ body.preloader-site {
   align-items: center;
   margin: 1rem;
 }
-
 
 .btn-whatsapp {
   background-color: #6cc751;
@@ -483,9 +469,7 @@ body.preloader-site {
   border-bottom: 1px solid #6cc751;
   align-items: center;
   margin: 1rem;
-
 }
-
 
 .btn-cta:hover {
   color:white;
@@ -521,7 +505,6 @@ body.preloader-site {
   height: 55px;
   align-items: center;
   margin: 0.1rem;
-
 }
 
 .voucher-code {
@@ -563,18 +546,22 @@ body.preloader-site {
   border-radius: 10px;
 }
 
+.tile .content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
 
 .foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-kang-emil.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/december-2018-karine-patryk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
   min-height: 24rem;
 }
 
-
 .foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-cashbac.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/january-2019-karine-patryk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -582,7 +569,7 @@ body.preloader-site {
 }
 
 .foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-selfie.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/december-2019-karine-patryk.jpg");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
@@ -590,7 +577,7 @@ body.preloader-site {
 }
 
 .foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-lamaran.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/december-2020-karine-patryk.jpg");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
@@ -598,23 +585,20 @@ body.preloader-site {
 }
 
 .foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-red-car.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/may-2022-karine-patryk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
   min-height: 24rem;
 }
-
 
 .foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-engagement-ami.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/january-2023-karine-patryk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
   min-height: 24rem;
 }
-
-
 
 .title-foto {
   font-size: 18pt;
@@ -624,22 +608,21 @@ body.preloader-site {
   color: white;
 }
 
-
 .subtitle-foto {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
   font-size: 14pt;
   font-weight: 600;
   margin-top: 15px;
   text-align: left;
   color: white;
+  margin-top: auto;
 }
 
 .section-light {
-  background-image: url(../image/divider-flowers-leaves.png);
-  background-position: bottom -30px center;
+  background-image: url(../image/tahitian-bouquet.jpg);
+  background-position: bottom 20px center;
   background-repeat: no-repeat;
-  background-size: initial;
+  background-size: 20%;
 }
 
 .instagram {

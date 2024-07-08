@@ -5,10 +5,10 @@
     <meta name="theme-color" content="#BC8887" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Undangan Pernikahan Sherly & Daeng</title>
+    <title>Karine Desfour & Patryk Holodynski</title>
 
-    <meta property="og:title" content="Undangan Pernikahan Sherly & Daeng - Sabtu, 21 Maret 2020">
-    <meta property="og:description" content="Undangan Pernikahan Sherly & Daeng - Sabtu, 21 Maret 2020 di RM Pondok Kenanga, Jakasampurna Bekasi">
+    <meta property="og:title" content="Karine Desfour & Patryk Holodynski - Saturday, 10 May 2025">
+    <meta property="og:description" content="Karine Desfour & Patryk Holodynski - Saturday, 10 May 2025 Mairie de Punaauia, Tahiti">
     <meta property="og:locale" content="id_ID" />
     <meta property="og:image" content="https://sherly.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
     <meta property="og:url" content="http://sherly.dae.ng/index.html">
@@ -16,14 +16,10 @@
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/wedding.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.coundown.js"></script>
+    <script src="js/jquery.countdown.js"></script>
     <link rel="icon" type="image/png" href="image/favicon.png" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
@@ -67,19 +63,18 @@
           <div id="mobile-nav" class="navbar-menu">
             <div class="navbar-end">
               <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">
-                  Waktu
+                <a class="navbar-item" href="#time">
+                  Time
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">
-                  Lokasi
+                <a class="navbar-item" href="#location">
+                  Location
                 </a>
               </div>
-              
               <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-sherly-daeng">
-                  Tentang Sherly dan Daeng
+                <a class="navbar-item" href="#karine-patryk">
+                  Karine & Patryk
                 </a>
               </div>
               <div class="navbar-item">
@@ -94,28 +89,26 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="subtitle">Undangan Pernikahan</h1>
-            <h2 class="title">Sherly & Daeng</h2>
+            <h1 class="subtitle">Wedding Invitation</h1>
+            <h2 class="title">Karine & Patryk</h2>
             <h4 class="subtitle tempatwaktu">
-              
-                Sabtu, 21 Maret 2020 
+                Saturday, 10 May 2025 
                 </br>
-                RM Pondok Kenanga, Jakasampurna
+                Mairie de Punaauia, Tahiti
                 </br>
-                Kota Bekasi
-              
+                French Polynesia
             </h4>
           </div>
           <!-- Start Countdown -->       
           <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+            <ul id="countdown" >
+              <li><span class="days">00</span><p class="days_text">Days</p></li>
               <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
               <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
               <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+              <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
             </ul>
             <div class="spasi">
             </div>
@@ -126,13 +119,13 @@
               var year = now.getFullYear() + 1;
           
               var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '03/21/2020 17:00:00';
+              var date = '05/10/2025 11:00:00';
 
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
+              $('#countdown').countdown({
+                date: date, // TODO Date format: 07/27/2017 17:00:00
                 offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
+                day: 'Day',
+                days: 'Days'
               }, function () {
                 alert('Done!');
               });
@@ -151,13 +144,13 @@
                     <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="#Waktu">Waktu</a>
+                    <a href="#time">Time</a>
                   </li>
                   <li>
-                    <a href="#lokasi">Lokasi</a>
+                    <a href="#location">Location</a>
                   </li>
                   <li>
-                    <a href="#tentang-sherly-daeng">Tentang Sherly & Daeng</a>
+                    <a href="#karine-patryk">Karine & Patryk</a>
                   </li>
 
                   <li>
@@ -178,75 +171,75 @@
     <div class="main-content">
     <!-- Begin regular-section-->
      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
         <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+          <img src="image/tahitian-gardenia.jpg" class="divider has-text-centered" alt="~~~">
         </div>
 
         <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          Assalamu'alaikum Warahmatullahi Wabarakatuh.
-          <br />
-          Dengan memohon rahmat dan ridha Allah swt, 
-          <br />
-          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
+          Dear Family and Friends,
+          <br>
+          <br>
+          We joyfully invite you to celebrate the union of our lives and hearts. 
+          <br>
+          <br>
+          Join us as we say <strong>"I do"</strong> and embark on this beautiful journey together.
+          <br>
+          <br>
+          Your presence would mean the world to us as we share this special day with the people we love most.
         </p>
 
-        <span class="space40px"></span>
         <span class="space40px"></span>
 
         <div data-aos="fade-up" data-aos-easing="linear">
           <div class="nama-lengkap" >
-            Sherly Jayanti, S.Par.
+            Karine Desfour
           </div>
           <div class="ampersand">&</div>
           <div class="nama-lengkap">
-          Daeng Muhammad Feisal, S.Kom.
+          Patryk Holodynski
           </div>
-           
         </div>
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
+        <span class="space40px is-hidden-mobile"></span>
+        <span class="space40px is-hidden-mobile"></span>
         <span class="space40px"></span>
         <span class="space40px"></span>
       </section>
       <!-- End regular-section-->    
       
-      <!-- Begin Waktu Section -->
-      <section class="section-dark" id="Waktu">
+      <!-- Begin Time Section -->
+      <section class="section-dark" id="time">
         <div class="container">
 
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Waktu</h1>
+            <h1 class="title has-text-centered section-title">Time</h1>
           </div>
           <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
             <div
               class="column is-4 has-vertically-aligned-content">
             
               <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Sabtu</div> 
-                  <div class="waktu tanggal-angka has-text-centered">21</div>
-                  <div class="waktu tanggal-bulan has-text-centered">Maret 2020</div>
+                  <div class="time tanggal-hari has-text-centered">Saturday</div> 
+                  <div class="time tanggal-angka has-text-centered">10</div>
+                  <div class="time tanggal-bulan has-text-centered">May 2025</div>
               </p>
             
             </div>
             <div class="column is-4 has-vertically-aligned-content">
             
-              <p class="waktu is-larger has-text-centered">
-                Akad Nikah:
+              <p class="time is-larger has-text-centered">
+                Mairie de Punaauia:
                 <br>
-                <strong>17.00 WIB</strong>
+                <strong>11:00</strong>
               </p>
             
             </div>
 
             <div class="column is-4 has-vertically-aligned-content">
               
-              <h1 class="waktu is-larger has-text-centered">
-                Resepsi:
+              <h1 class="time is-larger has-text-centered">
+                To'a Hotu:
                 <br>
-                <strong>19.00  - 21.00 WIB</strong>
+                <strong>13:00  - 21:00</strong>
               </h1>
               
               
@@ -262,54 +255,53 @@
           </a>
         </div>
       </section>
-      <!-- End Waktu Content -->
+      <!-- End Time Content -->
 
-      <!-- Begin Lokasi Section -->
-      <section class="section-darker" id="lokasi" >
+      <!-- Begin Location Section -->
+      <section class="section-darker" id="location" >
         <div class="container">
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Lokasi</h1>
+            <h1 class="title has-text-centered section-title">Location</h1>
             <p class="tempat is-larger has-text-centered">
-              <strong>RM Pondok Kenanga</strong>
+              <strong>Mairie de Punaauia</strong>
               <br>
-              Jl. Kenanga Raya No.9, RT.001/RW.006A, Jakasampurna, 
+              Tahiti, 
               <br>
-              Kec. Bekasi Barat, Kota Bekasi, Jawa Barat
+              French Polynesia
               <br>
             </p>
           </div>
           <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1280267408406!2d106.9691569150978!3d-6.246854895478259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d5988a190d9%3A0x22b6a052b0a6a5f3!2sRM.%20Pondok%20Kenanga!5e0!3m2!1sen!2sid!4v1579433583123!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.1752960148156!2d-149.61448272496844!3d-17.594408869848387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x769a3055981d9a37%3A0xdd8208409a2ee523!2sMairie%20de%20Punaauia!5e0!3m2!1sen!2sfr!4v1720468112533!5m2!1sen!2sfr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="space40px"></div>
           <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.google.com/maps?ll=-6.246855,106.971346&z=16&t=m&hl=en&gl=ID&mapclient=embed&daddr=RM.%20Pondok%20Kenanga%20Jl.%20Kenanga%20Raya%20No.9%20RT.001%2FRW.006A%2C%20Jakasampurna%20Bekasi%20Barat%2C%20Bekasi%20City%2C%20West%20Java%2017145@-6.2468549,106.9713456" class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <a href="https://maps.app.goo.gl/vB9RsMGfFxgr9RD87?g_st=com.google.maps.preview.copy" class="button btn-cta" target="_blank" data-aos="zoom-in">
               <i class="far fa-directions"></i>
               &nbsp;&nbsp;Google Maps
             </a>
           </div>
         </div>
       </section>
-      <!-- End Lokasi Content -->
+      <!-- End Location Content -->
 
-      <!-- Begin Tentang Sherly and Daeng -->
-      <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
+      <!-- Begin Karine Patryk -->
+      <section class="section-light regular-section is-fullheight" id="karine-patryk">
         <div class="container">
           <div class="columns is-multiline">  
           <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Tentang Sherly dan Daeng</h1>
-            
-
-          
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Our Journey Together So Far</h1>          
           <!-- IMAGES -->  
         <div class=" tile">
           <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
               <div class="content">
-                <p class="title-foto">November 2018</p>
+                <p class="title-foto">
+                  December 2018
+                </p>
                 <p class="subtitle-foto">
-                  Pertama kali saling kenal di <a href="https://cashbac.com" target="_blank">Cashbac</a>
+                  Bangkok - Our first days together
                 </p>
               </div>
             </article>
@@ -318,10 +310,10 @@
             <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
               <div class="content">
                 <p class="title-foto">
-                  Desember 2018 - Februari 2019
+                  January 2019
                 </p>
                 <p class="subtitle-foto">
-                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
+                  Thailand - Our SE Asia travel continues
                 </p>   
               </div>            
             </article>
@@ -330,10 +322,10 @@
             <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
               <div class="content">  
                 <p class="title-foto">
-                  Maret 2019
+                  December 2019
                 </p>
                 <p class="subtitle-foto">
-                  Cerita cinta dimulai
+                  London - PACS at the French Embassy
                 </p>
               </div>
             </article>
@@ -343,98 +335,111 @@
       <div class="space24px"></div>
       <div class="tile is-ancestor">
         <div class="tile is-parent">
-          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
+          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
             <div class="content">
-              <p class="title-foto">Juni 2019</p>
-              <p class="subtitle-foto">Pertemuan 2 keluarga</p>
+              <p class="title-foto">
+                December 2020
+              </p>
+              <p class="subtitle-foto">
+                Waiting for our Luka to arrive :)
+              </p>
             </div>
           </article>
         </div>
         <div class="tile is-parent">
-          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
+          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
             <div class="content">
-              <p class="title-foto">Desember 2019</p>
-              <p class="subtitle-foto">Lamaran</p>
+              <p class="title-foto">
+                May 2022
+              </p>
+              <p class="subtitle-foto">
+                Our family keeps growing! Waiting for Lyla :)
+              </p>
             </div>
           </article>
         </div>
         <div class="tile is-parent">              
-          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
+          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
             <div class="content">
-              <p class="title-foto">Maret 2020</p>
-              <p class="subtitle-foto">Menikah</p>
+              <p class="title-foto">
+                January 2023
+              </p>
+              <p class="subtitle-foto">
+                Family completed!
+              </p>
             </div>
           </article>
         </div>
       </div>   
           <!-- IMAGES -->
+          <div class="space40px is-hidden-mobile"></div>
+          <div class="space40px is-hidden-mobile"></div>
           <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> 
-            <div class="space40px"></div>
-            <div class="space40px"></div>
-
+          <div class="space40px"></div>
           </div>
         </div>
       </section>
-      <!-- End Tentang Sherly dan Daeng -->
+      <!-- End Karine Patryk -->
 
       <!-- Begin RSVP Content -->
       <section class="section-dark contact" id="rsvp">
         <div class="container">
           <div class="columns is-multiline">          
             <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Attendence Confirmation</h1>
             </div>
             <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
               <p class="h2 subtitle">
-                Merupakan suatu kehormatan dan kebahagiaan bagi kami
-                <br>
-                apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
-                memberikan doa restu.
+                Dear Family and Friends,
                 <br>
                 <br>
-                Jika bisa hadir kami tunggu konfirmasinya, 
+                We are overjoyed to share this special moment in our lives with you. 
                 <br>
-                Informasi: Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan suhu tubuh.
+                As we embark on this beautiful journey of love and commitment, your presence and support mean the world to us.
                 <br>
                 <br>
-                Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
+                We are delighted to confirm our acceptance of your kind invitation to celebrate our wedding day. 
+                <br>
+                Knowing that you will be there to witness and join in our happiness fills our hearts with immense joy.
+                <br>
+                <br>
+                Please find all the details of our wedding celebration on this website.
+                <br>
+                We can't wait to create cherished memories with you and make this day unforgettable.
+                <br>
+                <br>
+                Thank you for being a part of our love story.
                 <br> 
-                semoga bisa berjumpa di lain kesempatan
+                With all our love,
                 <br>
                 <br>
-                Stay safe & jaga kesehatan ya :)
-                </p>
-     
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Sherly,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari Sherly
+                Karine & Patryk
+              </p>
+              
+              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Hello%20Karine&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fa fa-whatsapp"></i>
+                &nbsp;&nbsp; Holodynski Karine
               </a>
               
-
-          
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Daeng,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp; Kabari Daeng
-              </a >
+              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Hello%20Patryk&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fa fa-whatsapp"></i>
+                &nbsp;&nbsp; Holodynski Patryk
+              </a>
               <div class="space40px"></div>
 
-              <div class="space40px"></div>
               <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+                <img src="image/tahitian-gardenia.jpg" class="divider has-text-centered" alt="~~~">
               </div>
               <div class="space40px"></div>
               <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Kami yang berbahagia,
+                Our social media
                 <br>
-                <a class="instagram":" href="https://instagram.com/nengchely" target="_blank" alt="Instagram Sherly">
-                  <i class="fab fa-instagram"></i> @nengchely
+                <a class="instagram":" href="https://instagram.com/karinoux_tahiti" target="_blank" alt="Instagram Karine">
+                  <i class="fab fa-instagram"></i> @karinoux_tahiti
                 </a>
                 &nbsp
-                <a class="instagram" href="https://instagram.com/daengdoang" target="_blank" alt="Instagram Daeng">
-                  <i class="fab fa-instagram"></i> @daengdoang
+                <a class="instagram" href="https://instagram.com/phjox" target="_blank" alt="Instagram Patryk">
+                  <i class="fab fa-instagram"></i> @phjox
                 </a>
               </p>
 
@@ -450,11 +455,11 @@
     <!-- Begin Footer -->
     <div class="footer">
       <div class="container">
-        <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
-          <p class="has-vertically-align">2020 &copy Daeng Muhammad Feisal</p>
+        <a href="https://github.com/p-holodynski/wedding-invitation" class="has-vertically-align">
+          <p class="has-vertically-align">2024 &copy Patryk Holodynski</p>
         </a>
         <a href="https://bulma.io" class="has-vertically-align">
-          <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
+          <img src="https://bulma.io/assets/brand/Bulma%20Icon.png" alt="Made with Bulma">
         </a>
         <a href="https://www.netlify.com">
           <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
@@ -465,7 +470,7 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menikah.js"></script>
+    <script src="js/wedding.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
