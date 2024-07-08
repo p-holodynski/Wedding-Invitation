@@ -36,7 +36,7 @@ html {
 
 .hero {
   background-image: url("../image/hero-background.jpg");
-  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
+  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/hero-background.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -386,9 +386,10 @@ vertical-align: middle;
 
 #toTop {
   position: fixed;
-  opacity: 1;
+  opacity: 0;
   right: 20px;
   bottom: 20px;
+  z-index: 10;
 }
 
 /* Up Arrow Swipe */
@@ -610,9 +611,12 @@ body.preloader-site {
   border-radius: 10px;
 }
 
+article.tile {
+  display: flex;
+}
+
 .tile .content {
   display: flex;
-  height: 100%;
   flex-direction: column;
 }
 
