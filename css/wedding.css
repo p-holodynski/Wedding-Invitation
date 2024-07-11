@@ -286,6 +286,10 @@ html {
   padding-bottom: 60px;
 }
 
+.main-content .section-title.form-title {
+  padding-bottom: 0px;
+}
+
 .nama-lengkap {
   font-family: 'Rouge Script', sans-serif;
   color: #996E6D;
