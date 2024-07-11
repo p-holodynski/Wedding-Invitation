@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
   <link rel="stylesheet" type="text/css" href="css/wedding.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+  <link rel="stylesheet" type="text/css" href="css/bulma-checkbox.css" />
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/jquery.countdown.js"></script>
   <link rel="icon" type="image/png" href="image/tahitian-gardenia.png" />
@@ -282,7 +283,7 @@
           <p class="tempat is-larger has-text-centered">
             <strong>Mairie de Punaauia</strong>
             <br>
-            Tahiti,
+            Tahiti
             <br>
             French Polynesia
             <br>
@@ -440,18 +441,97 @@
               Karine & Patryk
             </p>
 
-            <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Hello%20Karine&source=&data="
-              class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-              <i class="fa fa-whatsapp"></i>
-              &nbsp;&nbsp; Holodynski Karine
-            </a>
-
-            <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Hello%20Patryk&source=&data="
-              class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-              <i class="fa fa-whatsapp"></i>
-              &nbsp;&nbsp; Holodynski Patryk
-            </a>
-            <div class="space40px"></div>
+            <!-- Begin Form Content -->
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title form-title" data-aos="fade-up" data-aos-easing="linear">
+                Let us know about your arrival & departure dates, as well as what type of activities would you be
+                interested in:
+              </h1>
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="column is-12"
+                data-aos="fade-up" data-aos-easing="linear">
+                <div class="field">
+                  <div class="control">
+                    <label class="label section-title form-title">Your Names</label>
+                    <input class="input" type="text" name="names" placeholder="Your names">
+                  </div>
+                </div>
+                <label class="label section-title form-title has-text-left">
+                  Activities
+                </label>
+                <div class="field">
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium">
+                      <input type="checkbox" name="scuba" value="false">
+                      <span class="check"></span>
+                      <span class="control-label">Scuba Diving</span>
+                    </label>
+                  </div>
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium">
+                      <input type="checkbox" name="snorkel" value="false">
+                      <span class="check"></span>
+                      <span class="control-label">Snorkeling</span>
+                    </label>
+                  </div>
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium">
+                      <input type="checkbox" name="boat" value="false">
+                      <span class="check"></span>
+                      <span class="control-label">Renting a boat</span>
+                    </label>
+                  </div>
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium">
+                      <input type="checkbox" name="safari" value="false">
+                      <span class="check"></span>
+                      <span class="control-label">Safari 4x4 through the island</span>
+                    </label>
+                  </div>
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium">
+                      <input type="checkbox" name="island_tour" value="false">
+                      <span class="check"></span>
+                      <span class="control-label">Tour of the island</span>
+                    </label>
+                  </div>
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium">
+                      <input type="checkbox" name="belvedere" value="false">
+                      <span class="check"></span>
+                      <span class="control-label">Belvedere - A restaurant located on top of the mountain with scenic
+                        views and a pool.</span>
+                    </label>
+                  </div>
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium">
+                      <input type="checkbox" name="hike_miri" value="false">
+                      <span class="check"></span>
+                      <span class="control-label">Miri Hike - A short hike with a nice view at the top. Aprox time one
+                        way 45min.</span>
+                    </label>
+                  </div>
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium">
+                      <input type="checkbox" name="hike_marau" value="false">
+                      <span class="check"></span>
+                      <span class="control-label">Marau Summit Hike - A long hike with spectacular views at the top.
+                        Aprox time one way 2h depending on the fitness level.</span>
+                    </label>
+                  </div>
+                  <div class="control is-hidden">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <button type="submit" class="button btn-cta">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- End Form Content -->
 
             <div data-aos="fade-up" data-aos-easing="linear">
               <img src="image/tahitian-gardenia.png" class="divider has-text-centered" alt="~~~">
@@ -460,7 +540,7 @@
             <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
               Our social media
               <br>
-              <a class="instagram" :" href="https://instagram.com/karinoux_tahiti" target="_blank"
+              <a class="instagram" href="https://instagram.com/karinoux_tahiti" target="_blank"
                 alt="Instagram Karine">
                 <i class="fab fa-instagram"></i> @karinoux_tahiti
               </a>
@@ -470,77 +550,6 @@
               </a>
             </p>
           </div>
-          <!-- Begin Form Content -->
-          <div class="column is-12 prolog">
-            <h1 class="title has-text-centered section-title form-title" data-aos="fade-up" data-aos-easing="linear">
-              Let us know about your arrival & departure dates, as well as what type of activities would you be interested in:
-            </h1>
-            <form name="contact" method="POST" data-netlify="true" class="column is-12" data-aos="fade-up" data-aos-easing="linear">
-              <div class="field">
-                <!-- <label class="label">Your Names:</label> -->
-                <div class="control">
-                  <input class="input" type="text" name="names" placeholder="Your names">
-                </div>
-              </div>
-              <label class="label">Activities:</label>
-              <div class="field is-grouped is-grouped-multiline">
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="scuba">
-                    Scuba Diving
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="snorkel">
-                    Snorkeling
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="boat">
-                    Renting a boat
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="safari">
-                    Safari 4x4 through the island
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="island_tour">
-                    Tour of the island
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="belvedere">
-                    Belvedere - A restaurant located on top of the mountain with scenic views and a pool.
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="hike_miri">
-                    Miri Hike - A short hike with a nice view at the top. Aprox time one way 45min
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="hike_marau">
-                    Marau Summit Hike - A long hike with spectacular views at the top. Aprox time one way 2h depending on the fitness level.
-                  </label>
-                </div>
-              </div>
-              <div class="field">
-                <div class="control">
-                  <button type="submit" class="button btn-cta">Send</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- End Form Content -->
           <!-- End Main Content -->
         </div>
       </div>
