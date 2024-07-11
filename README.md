@@ -1,6 +1,6 @@
 # Wedding Landing Page - Patryk Holodynski
 
-![Thumbnail](/image/thumbnail-web-sherly-daeng-menikah.png)
+![Thumbnail](/image/thumbnail-web-karine-patryk.png)
 
 
 # Section/Feature
