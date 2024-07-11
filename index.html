@@ -21,23 +21,9 @@
   <link rel="stylesheet" type="text/css" href="css/wedding.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
   <link rel="stylesheet" type="text/css" href="css/bulma-checkbox.css" />
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/jquery.countdown.js"></script>
   <link rel="icon" type="image/png" href="image/tahitian-gardenia.png" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script> -->
-  <!-- Begin Script for Countdown -->
-  <!-- <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-23064379-20');
-    </script> -->
-  <!-- Begin Script for Countdown -->
-
-  <!-- Github Button -->
-  <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
 </head>
 
 <body>
@@ -264,14 +250,6 @@
         </div>
       </div>
       <div class="space40px"></div>
-      <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-        <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGgzdW00NG84dXFwMzcwNXYxbGliNGxzaWggZGFlbmdkb2FuZ0Bt&amp;tmsrc=daengdoang%40gmail.com"
-          target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank"
-          data-aos="zoom-in">
-          <i class="far fa-calendar-plus"></i>
-          &nbsp;&nbsp;Google Calendar
-        </a>
-      </div>
     </section>
     <!-- End Time Content -->
 
@@ -451,31 +429,37 @@
                 data-aos="fade-up" data-aos-easing="linear">
                 <div class="field">
                   <div class="control">
-                    <label class="label section-title form-title">Your Names</label>
-                    <input class="input" type="text" name="names" placeholder="Your names">
+                    <label class="label section-title form-title" for="names">Your Names</label>
+                    <input class="input" type="text" name="names" placeholder="Your names" id="names">
                   </div>
                 </div>
-                <label class="label section-title form-title has-text-left">
-                  Activities
-                </label>
                 <div class="field">
                   <div class="control">
-                    <label class="b-checkbox checkbox is-medium">
-                      <input type="checkbox" name="scuba">
+                    <label class="label section-title form-title" for="datetimes">Your Arrival & Departure</label>
+                    <input class="input" type="text" name="datetimes" id="datetimes">
+                  </div>
+                </div>
+                <p class="label section-title form-title has-text-left">
+                  Activities
+                </p>
+                <div class="field">
+                  <div class="control">
+                    <label class="b-checkbox checkbox is-medium" for="scuba">
+                      <input type="checkbox" name="scuba" id="scuba">
                       <span class="check"></span>
                       <span class="control-label">Scuba Diving</span>
                     </label>
                   </div>
                   <div class="control">
-                    <label class="b-checkbox checkbox is-medium">
-                      <input type="checkbox" name="snorkel">
+                    <label class="b-checkbox checkbox is-medium" for="snorkel">
+                      <input type="checkbox" name="snorkel" id="snorkel">
                       <span class="check"></span>
                       <span class="control-label">Snorkeling</span>
                     </label>
                   </div>
                   <div class="control">
-                    <label class="b-checkbox checkbox is-medium">
-                      <input type="checkbox" name="boat">
+                    <label class="b-checkbox checkbox is-medium" for="boat">
+                      <input type="checkbox" name="boat" id="boat">
                       <span class="check"></span>
                       <span class="control-label">Renting a boat</span>
                     </label>
@@ -484,8 +468,8 @@
                     </span>
                   </div>
                   <div class="control">
-                    <label class="b-checkbox checkbox is-medium">
-                      <input type="checkbox" name="safari">
+                    <label class="b-checkbox checkbox is-medium" for="safari">
+                      <input type="checkbox" name="safari" id="safari">
                       <span class="check"></span>
                       <span class="control-label">Safari 4x4</span>
                     </label>
@@ -494,15 +478,15 @@
                     </span>
                   </div>
                   <div class="control">
-                    <label class="b-checkbox checkbox is-medium">
-                      <input type="checkbox" name="island_tour">
+                    <label class="b-checkbox checkbox is-medium" for="island_tour">
+                      <input type="checkbox" name="island_tour" id="island_tour">
                       <span class="check"></span>
                       <span class="control-label">Tour of the island</span>
                     </label>
                   </div>
                   <div class="control">
-                    <label class="b-checkbox checkbox is-medium">
-                      <input type="checkbox" name="belvedere">
+                    <label class="b-checkbox checkbox is-medium" for="belvedere">
+                      <input type="checkbox" name="belvedere" id="belvedere">
                       <span class="check"></span>
                       <span class="control-label">O Belvédère</span>
                     </label>
@@ -511,8 +495,8 @@
                     </span>
                   </div>
                   <div class="control">
-                    <label class="b-checkbox checkbox is-medium">
-                      <input type="checkbox" name="hike_miri">
+                    <label class="b-checkbox checkbox is-medium" for="hike_miri">
+                      <input type="checkbox" name="hike_miri" id="hike_miri">
                       <span class="check"></span>
                       <span class="control-label">Miri Hike</span>
                     </label>
@@ -521,8 +505,8 @@
                     </span>
                   </div>
                   <div class="control">
-                    <label class="b-checkbox checkbox is-medium">
-                      <input type="checkbox" name="hike_marau">
+                    <label class="b-checkbox checkbox is-medium" for="hike_marau">
+                      <input type="checkbox" name="hike_marau" id="hike_marau">
                       <span class="check"></span>
                       <span class="control-label">Marau Summit Hike</span>
                     </label>
@@ -531,8 +515,8 @@
                     </span>
                   </div>
                   <div class="control is-hidden">
-                    <label>
-                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    <label for="bot-field">
+                      Don’t fill this out if you’re human: <input name="bot-field" id="bot-field"/>
                     </label>
                   </div>
                 </div>
@@ -586,14 +570,27 @@
   <!-- End Footer -->
 
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/wedding.js"></script>
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <script>
     AOS.init({
       easing: "ease-out",
       duration: 800,
+    });
+
+    $(function() {
+      $('input[name="datetimes"]').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+          format: 'DD/M/YYYY hh:mm A'
+        }
+      });
     });
   </script>
 </body>
