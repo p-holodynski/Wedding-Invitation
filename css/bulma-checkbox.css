@@ -4,6 +4,10 @@
 	box-shadow: none;
 }
 
+.field .control {
+	margin-bottom: 10px;
+}
+
 .b-checkbox.checkbox {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -17,6 +21,7 @@
 	outline: none;
 	display: inline-flex;
 	align-items: center;
+	vertical-align: middle;
 }
 
 .b-checkbox.checkbox:not(.button) {
