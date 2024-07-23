@@ -539,18 +539,6 @@ body.preloader-site {
   margin: 1rem;
 }
 
-.btn-cta:hover {
-  color:white;
-  background-color: #bf7877;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  border: 2px solid #bf7877;
-  width:  210px;
-  height: 65px;
-  align-items: center;
-  margin: 1rem;
-}
-
 .btn-cta {
   background-color: #996E6D;
   width:  210px;
@@ -560,7 +548,12 @@ body.preloader-site {
   border: 2px solid #996E6D;
   border-radius: 10px;
   align-items: center;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.btn-cta:hover {
+  color:white;
+  background-color: #bf7877;
 }
 
 .cashbac-logo-inline {
@@ -624,7 +617,7 @@ article.tile {
 }
 
 .foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/december-2018-karine-patryk.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.1), rgba(48, 47, 47, 0.9)), url("../image/december-2018-karine-patryk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -632,7 +625,7 @@ article.tile {
 }
 
 .foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/january-2019-karine-patryk.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.1), rgba(48, 47, 47, 0.9)), url("../image/january-2019-karine-patryk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -640,7 +633,7 @@ article.tile {
 }
 
 .foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/december-2019-karine-patryk.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.1), rgba(48, 47, 47, 0.9)), url("../image/december-2019-karine-patryk.jpg");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
@@ -648,7 +641,7 @@ article.tile {
 }
 
 .foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/december-2020-karine-patryk.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.1), rgba(48, 47, 47, 0.9)), url("../image/december-2020-karine-patryk.jpg");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
@@ -656,7 +649,7 @@ article.tile {
 }
 
 .foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/may-2022-karine-patryk.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.1), rgba(48, 47, 47, 0.9)), url("../image/may-2022-karine-patryk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -664,7 +657,7 @@ article.tile {
 }
 
 .foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/january-2023-karine-patryk.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.1), rgba(48, 47, 47, 0.9)), url("../image/january-2023-karine-patryk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
