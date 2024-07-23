@@ -49,6 +49,18 @@ html {
   font-size: 5rem;
   padding-bottom: 5px;
   color: whitesmoke;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 769px), print {
+  .hero.is-large .hero-body {
+      padding-bottom: 1rem;
+      padding-top: 8rem;
+  }
+
+  .hero .title {
+    margin-bottom: 8rem;
+  }
 }
 
 .hero .subtitle {
