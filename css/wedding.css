@@ -340,7 +340,7 @@ vertical-align: middle;
 .tempat {
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .has-vertically-align {
