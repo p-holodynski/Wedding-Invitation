@@ -694,12 +694,12 @@ article.tile {
   margin-top: auto;
 }
 
-.section-light {
+/* .section-light {
   background-image: url(../image/tahitian-bouquet.jpg);
   background-position: bottom 20px center;
   background-repeat: no-repeat;
-  background-size: 15%;
-}
+  background-size: 20%;
+} */
 
 .instagram {
   color: #996E6D;
