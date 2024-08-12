@@ -1,6 +1,6 @@
 /* Bulma Utilities */
 .input:active, .input:focus, .is-active.input, .is-active.textarea, .is-focused.input, .is-focused.textarea, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus {
-	border-color: #996E6D;
+	border-color: #674235;
 	box-shadow: none;
 }
 
@@ -45,14 +45,14 @@
 	height: 1.25em;
 	flex-shrink: 0;
 	border-radius: 4px;
-	border: 2px solid #7a7a7a;
+	border: 2px solid #674235;
 	transition: background 150ms ease-out;
 	background: transparent;
 }
 
 .b-checkbox.checkbox input[type=checkbox]:checked+.check {
-	background: #996E6D url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
-	border-color: #996E6D;
+	background: #674235 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
+	border-color: #674235;
 }
 
 .b-checkbox.checkbox input[type=checkbox]:focus+.check {
@@ -76,7 +76,7 @@
 }
 
 .b-checkbox.checkbox:hover input[type=checkbox]:not(:disabled)+.check {
-	border-color: #996E6D;
+	border-color: #674235;
 }
 
 .b-checkbox.checkbox.is-medium {
