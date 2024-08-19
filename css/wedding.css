@@ -735,6 +735,6 @@ article.tile {
 }
 
 .tag:not(body) {
-  text-wrap: pretty;
+  white-space: normal;
   height: auto;
 }
