@@ -148,6 +148,13 @@ html {
 }
 
 @media (max-width: 599px) {
+  .main-content .section-dark {
+    padding: 40px 20px;
+  }
+  
+  .main-content .section-darker {
+    padding: 40px 20px;
+  }
   .main-content .section-dark.resume {
     padding-top: 75px;
   }
@@ -181,8 +188,11 @@ html {
 }
 
 @media (max-width: 599px) {
+  .main-content .section-dark.my-work {
+    padding: 40px 20px;
+  }
   .main-content .section-dark.foto-foto {
-    padding: 75px 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -220,6 +230,9 @@ html {
 }
 
 @media (max-width: 599px) {
+  .main-content .section-light {
+    padding: 40px 20px;
+  }
   .main-content .section-light.regular-section .about-links {
     text-align: center;
   }
@@ -268,7 +281,7 @@ html {
 
 @media (max-width: 599px) {
   .main-content .section-light.contact {
-    padding: 80px 40px;
+    padding: 40px 20px;
   }
 }
 
@@ -719,4 +732,9 @@ article.tile {
   vertical-align: middle;
   text-align: center;
   padding: 10px;
+}
+
+.tag:not(body) {
+  text-wrap: pretty;
+  height: auto;
 }
