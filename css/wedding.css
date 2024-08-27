@@ -508,6 +508,23 @@ vertical-align: middle;
   }
 }
 
+#changeLanguage {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  z-index: 10;
+  color: white;
+  border-color: #674235;
+  background-color: #674235;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .arrow-slide {
+    background: white;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   background-color: #d9b380;

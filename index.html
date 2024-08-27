@@ -40,6 +40,11 @@
     <span class="right-arm"></span>
     <span class="arrow-slide"></span>
   </a>
+  <!-- Toggle Language -->
+  <div id="changeLanguage" class="arrow-up">
+    <span data-en="EN" data-fr="FR">EN</span>
+    <span class="arrow-slide"></span>
+  </div>
   <!-- Begin Header -->
   <div class="header-wrapper" id="home">
     <!-- Begin Hero -->
@@ -58,12 +63,12 @@
         <div id="mobile-nav" class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item">
-              <a class="navbar-item" href="#time">
+              <a class="navbar-item" href="#time" data-en="Time" data-fr="Temps">
                 Time
               </a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-item" href="#location">
+              <a class="navbar-item" href="#location" data-en="Location" data-fr="Emplacement">
                 Location
               </a>
             </div>
@@ -84,14 +89,14 @@
       <!-- Begin Hero Content-->
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="subtitle">Wedding Invitation</h1>
+          <h1 class="subtitle" data-en="Wedding Invitation" data-fr="Invitation de mariage">Wedding Invitation</h1>
           <h2 class="title">Karine & Patryk</h2>
           <h4 class="subtitle tempatwaktu">
-            Saturday, 10 May 2025
+            <span data-en="Saturday, 10 May 2025" data-fr="Samedi, 10 Mai 2025">Saturday, 10 May 2025</span>
             <br>
-            Mairie de Punaauia, Tahiti
+            <span data-en="Town Hall in Punaauia, Tahiti" data-fr="Mairie de Punaauia, Tahiti">Town Hall in Punaauia, Tahiti</span>
             <br>
-            French Polynesia
+            <span data-en="French Polynesia" data-fr="Polynésie française">French Polynesia</span>
           </h4>
         </div>
         <!-- Start Countdown -->
@@ -116,21 +121,21 @@
           <div class="spasi">
           </div>
           <script type="text/javascript">
-            var now = new Date();
-            var day = now.getDate();
-            var month = now.getMonth() + 1;
-            var year = now.getFullYear() + 1;
+            let now = new Date();
+            let day = now.getDate();
+            let month = now.getMonth() + 1;
+            let year = now.getFullYear() + 1;
 
-            var nextyear = month + '/' + day + '/' + year + ' 00:00:00';
-            var date = '05/10/2025 11:00:00';
+            let nextyear = month + '/' + day + '/' + year + ' 00:00:00';
+            let date = '05/10/2025 11:00:00';
 
             $('#countdown').countdown({
               date: date, // TODO Date format: 07/27/2017 17:00:00
               offset: -10, // TODO Your Timezone Offset
               day: 'Day',
-              days: 'Days'
+              days: 'Days',
             }, function () {
-              alert('Done!');
+              //alert('Done!');
             });
           </script>
         </div>
@@ -144,13 +149,13 @@
             <div class="column is-12 hero-menu-desktop has-text-centered">
               <ul>
                 <li class="is-active">
-                  <a href="#home">Home</a>
+                  <a href="#home" data-en="Home" data-fr="Accueil">Home</a>
                 </li>
                 <li>
-                  <a href="#time">Time</a>
+                  <a href="#time" data-en="Time" data-fr="Temps">Time</a>
                 </li>
                 <li>
-                  <a href="#location">Location</a>
+                  <a href="#location" data-en="Location" data-fr="Emplacement">Location</a>
                 </li>
                 <li>
                   <a href="#karine-patryk">Karine & Patryk</a>
@@ -180,16 +185,16 @@
       </div>
 
       <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-        Dear Family and Friends,
+        <span data-en="Dear Family and Friends," data-fr="Chère famille et amis,">Dear Family and Friends,</span>
         <br>
         <br>
-        We joyfully invite you to celebrate the union of our lives and hearts.
+        <span data-en="We joyfully invite you to celebrate the union of our lives and hearts." data-fr="Nous vous invitons avec joie à célébrer l’union de nos vies et de nos cœurs.">We joyfully invite you to celebrate the union of our lives and hearts.</span>
         <br>
         <br>
-        Join us as we say <strong>"I do"</strong> and embark on this beautiful journey together.
+        <span data-en="Join us as we say " data-fr="Rejoignez-nous comme nous le disons">Join us as we say </span><strong><span data-en=' "I do" ' data-fr=' "Je le veux" '> "I do" </span></strong><span data-en=" and embark on this beautiful journey together." data-fr=" et embarquez pour ce beau voyage ensemble."> and embark on this beautiful journey together.</span>
         <br>
         <br>
-        Your presence would mean the world to us as we share this special day with the people we love most.
+        <span data-en="Your presence would mean the world to us as we share this special day with the people we love most." data-fr="Votre présence signifierait beaucoup pour nous alors que nous partageons cette journée spéciale avec les personnes que nous aimons le plus.">Your presence would mean the world to us as we share this special day with the people we love most.</span>
       </p>
 
       <span class="space40px"></span>
@@ -218,22 +223,22 @@
       <div class="container">
 
         <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">Schedule</h1>
+          <h1 class="title has-text-centered section-title" data-en="Schedule" data-fr="Calendrier">Schedule</h1>
         </div>
         <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
           <div class="column is-3 has-vertically-aligned-content">
 
             <p class="is-larger has-text-centered">
-            <div class="time tanggal-hari has-text-centered">Saturday</div>
+            <div class="time tanggal-hari has-text-centered" data-en="Saturday" data-fr="Samedi">Saturday</div>
             <div class="time tanggal-angka has-text-centered">10</div>
-            <div class="time tanggal-bulan has-text-centered">May 2025</div>
+            <div class="time tanggal-bulan has-text-centered" data-en="May 2025" data-fr="Mai 2025">May 2025</div>
             </p>
 
           </div>
           <div class="column is-3 has-vertically-aligned-content">
 
             <p class="time is-larger has-text-centered">
-              Mairie de Punaauia:
+              <span data-en="Town Hall in Punaauia" data-fr="Mairie de Punaauia:">Town Hall in Punaauia</span>
               <br>
               <strong>11:00</strong>
             </p>
@@ -245,7 +250,7 @@
             <p class="time is-larger has-text-centered">
               Tetavake Lot 36:
               <br>
-              Vin d'honneur
+              <span data-en="Celebratory drinks" data-fr="Vin d'honneur">Celebratory drinks</span>
               <br>
               <strong>11:30 - 13:30</strong>
             </p>
@@ -255,11 +260,11 @@
           <div class="column is-3 has-vertically-aligned-content">
 
             <h1 class="time is-larger has-text-centered">
-              Domaine To'a Hotu:
+              <span data-en="Villa To'a Hotu:" data-fr="Domaine To'a Hotu:">Villa To'a Hotu:</span>
               <br>
-              Ceremony & Dinner
+              <span data-en="Ceremony & Dinner" data-fr="Cérémonie et dîner">Ceremony & Dinner</span>
               <br>
-              <strong>16:00 - End Time, Who knows?!</strong>
+              <strong><span data-en="16:00 - End Time, Who knows?!" data-fr="16:00 - Heure de fin, qui sait ?!">16:00 - End Time, Who knows?!</span></strong>
             </h1>
 
           </div>
@@ -270,9 +275,9 @@
           <div class="column is-3 has-vertically-aligned-content">
 
             <p class="is-larger has-text-centered">
-            <div class="time tanggal-hari has-text-centered">Sunday</div>
+            <div class="time tanggal-hari has-text-centered" data-en="Sunday" data-fr="Dimanche">Sunday</div>
             <div class="time tanggal-angka has-text-centered">11</div>
-            <div class="time tanggal-bulan has-text-centered">May 2025</div>
+            <div class="time tanggal-bulan has-text-centered" data-en="May 2025" data-fr="Mai 2025">May 2025</div>
             </p>
 
           </div>
@@ -280,9 +285,9 @@
           <div class="column is-9 has-vertically-aligned-content">
 
             <h1 class="time is-larger has-text-centered">
-              Domaine To'a Hotu:
+              <span data-en="Villa To'a Hotu:" data-fr="Domaine To'a Hotu:">Villa To'a Hotu:</span>
               <br>
-              Brunch - Ma'a Tahiti
+              Brunch - Ma'a Tahitian - Local food
               <br>
               <strong>10:00 - 15:00</strong>
             </h1>
@@ -300,9 +305,9 @@
       <div class="container">
         <!-- City Hall -->
         <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">City Hall Location</h1>
+          <h1 class="title has-text-centered section-title" data-en="City Hall Location" data-fr="Emplacement de l'hôtel de ville">City Hall Location</h1>
           <p class="tempat is-larger has-text-centered">
-            <strong>Mairie de Punaauia</strong>
+            <strong><span data-en="Town Hall in Punaauia" data-fr="Mairie de Punaauia">Town Hall in Punaauia</span></strong>
           </p>
         </div>
         <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
@@ -315,7 +320,7 @@
 
         <!-- Vin d'honneur -->
         <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">Vin d'honneur Location</h1>
+          <h1 class="title has-text-centered section-title" data-en="Celebratory drinks Location" data-fr="Emplacement de Vin d'honneur">Celebratory drinks Location</h1>
           <p class="tempat is-larger has-text-centered">
             <strong>Tetavake Lot 36, Punaauia</strong>
           </p>
@@ -329,9 +334,9 @@
 
         <!-- Villa Tahiti Iti -->
         <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">Wedding Location</h1>
+          <h1 class="title has-text-centered section-title" data-en="Wedding Location" data-fr="Lieu du mariage">Wedding Location</h1>
           <p class="tempat is-larger has-text-centered">
-            <strong>Domaine To'a Hotu</strong>
+            <strong><span data-en="Villa To'a Hotu" data-fr="Domaine To'a Hotu">Villa To'a Hotu</span></strong>
           </p>
         </div>
         <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
@@ -343,7 +348,7 @@
 
         <!-- Te Mana Lodge -->
         <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">Possible Accomodations</h1>
+          <h1 class="title has-text-centered section-title" data-en="Possible Accomodations" data-fr="Hébergements possibles">Possible Accomodations</h1>
           <p class="tempat is-larger has-text-centered">
             <strong>Te Mana Lodge</strong>
           </p>
@@ -424,7 +429,8 @@
       <div class="container">
         <div class="columns is-multiline">
           <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Our Journey
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear" data-en="Our Journey
+            Together So Far" data-fr="Notre voyage Ensemble jusqu'à présent">Our Journey
               Together So Far</h1>
             <!-- IMAGES -->
             <div class=" tile">
@@ -432,10 +438,10 @@
                 <div class="tile is-parent">
                   <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
                     <div class="content">
-                      <p class="title-foto">
+                      <p class="title-foto" data-en="December 2018" data-fr="Décembre 2018">
                         December 2018
                       </p>
-                      <p class="subtitle-foto">
+                      <p class="subtitle-foto" data-en="Bangkok - Our first days together" data-fr="Bangkok - Nos premiers jours ensemble">
                         Bangkok - Our first days together
                       </p>
                     </div>
@@ -444,10 +450,10 @@
                 <div class="tile is-parent">
                   <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
                     <div class="content">
-                      <p class="title-foto">
+                      <p class="title-foto" data-en="January 2019" data-fr="Janvier 2019">
                         January 2019
                       </p>
-                      <p class="subtitle-foto">
+                      <p class="subtitle-foto" data-en="Thailand - Our SE Asia travel continues" data-fr="Thaïlande - Notre voyage en Asie du Sud-Est continue">
                         Thailand - Our SE Asia travel continues
                       </p>
                     </div>
@@ -456,10 +462,10 @@
                 <div class="tile is-parent">
                   <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
                     <div class="content">
-                      <p class="title-foto">
+                      <p class="title-foto" data-en="December 2019" data-fr="Décembre 2019">
                         December 2019
                       </p>
-                      <p class="subtitle-foto">
+                      <p class="subtitle-foto" data-en="London - PACS at the French Embassy" data-fr="Londres - PACS à l'Ambassade de France">
                         London - PACS at the French Embassy
                       </p>
                     </div>
@@ -472,10 +478,10 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
                   <div class="content">
-                    <p class="title-foto">
+                    <p class="title-foto" data-en="December 2020" data-fr="Décembre 2020">
                       December 2020
                     </p>
-                    <p class="subtitle-foto">
+                    <p class="subtitle-foto" data-en="Waiting for our Luka to arrive :)" data-fr="En attendant l'arrivée de notre Luka :)">
                       Waiting for our Luka to arrive :)
                     </p>
                   </div>
@@ -484,10 +490,10 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
                   <div class="content">
-                    <p class="title-foto">
+                    <p class="title-foto" data-en="May 2022" data-fr="Mai 2022">
                       May 2022
                     </p>
-                    <p class="subtitle-foto">
+                    <p class="subtitle-foto" data-en="Our family keeps growing! Waiting for Lyla :)" data-fr="Notre famille ne cesse de s'agrandir ! En attendant Lyla :)">
                       Our family keeps growing! Waiting for Lyla :)
                     </p>
                   </div>
@@ -496,10 +502,10 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
                   <div class="content">
-                    <p class="title-foto">
+                    <p class="title-foto" data-en="January 2023" data-fr="Janvier 2023">
                       January 2023
                     </p>
-                    <p class="subtitle-foto">
+                    <p class="subtitle-foto" data-en="Family completed!" data-fr="Famille complète!">
                       Family completed!
                     </p>
                   </div>
@@ -521,34 +527,34 @@
       <div class="container">
         <div class="columns is-multiline">
           <div class="column is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Attendence
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear" data-en="Attendence
+            Confirmation" data-fr="Confirmation de présence">Attendence
               Confirmation</h1>
           </div>
           <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
             <p class="h2 subtitle">
-              Dear Family and Friends,
+              <span data-en="Dear Family and Friends," data-fr="Chère famille et amis,">Dear Family and Friends,</span>
               <br>
               <br>
-              We are overjoyed to share this special moment in our lives with you.
+              <span data-en="We are overjoyed to share this special moment in our lives with you." data-fr="Nous sommes ravis de partager avec vous ce moment privilégié de notre vie.">We are overjoyed to share this special moment in our lives with you.</span>
               <br>
-              As we embark on this beautiful journey of love and commitment, your presence and support mean the world to
-              us.
-              <br>
-              <br>
-              We are delighted to confirm our acceptance of your kind invitation to celebrate our wedding day.
-              <br>
-              Knowing that you will be there to witness and join in our happiness fills our hearts with immense joy.
+              <span data-en="As we embark on this beautiful journey of love and commitment, your presence and support mean the world to us." data-fr="Alors que nous nous embarquons dans ce beau voyage d’amour et d’engagement, votre présence et votre soutien comptent pour nous.">As we embark on this beautiful journey of love and commitment, your presence and support mean the world to us.</span>
               <br>
               <br>
-              Please find all the details of our wedding celebration on this website.
+              <span data-en="We are delighted to confirm our acceptance of your kind invitation to celebrate our wedding day." data-fr="Nous sommes ravis de confirmer notre acceptation de votre aimable invitation à célébrer le jour de notre mariage.">We are delighted to confirm our acceptance of your kind invitation to celebrate our wedding day.</span>
               <br>
-              We can't wait to create cherished memories with you and make this day unforgettable.
-              <br>
-              <br>
-              Thank you for being a part of our love story.
+              <span data-en="Knowing that you will be there to witness and join in our happiness fills our hearts with immense joy." data-fr="Savoir que vous serez là pour témoigner et vous joindre à notre bonheur remplit nos cœurs d’une immense joie.">Knowing that you will be there to witness and join in our happiness fills our hearts with immense joy.</span>
               <br>
               <br>
-              With all our love,
+              <span data-en="Please find all the details of our wedding celebration on this website." data-fr="Retrouvez tous les détails de notre célébration de mariage sur ce site.">Please find all the details of our wedding celebration on this website.</span>
+              <br>
+              <span data-en="We can't wait to create cherished memories with you and make this day unforgettable." data-fr="Nous avons hâte de créer des souvenirs précieux avec vous et de rendre cette journée inoubliable.">We can't wait to create cherished memories with you and make this day unforgettable.</span>
+              <br>
+              <br>
+              <span data-en="Thank you for being a part of our love story." data-fr="Merci de faire partie de notre histoire d'amour.">Thank you for being a part of our love story.</span>
+              <br>
+              <br>
+              <span data-en="With all our love," data-fr="Avec tout notre amour,">With all our love,</span>
               <br>
               <br>
               Karine & Patryk
@@ -556,42 +562,41 @@
 
             <!-- Begin Form Content -->
             <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title form-title" data-aos="fade-up" data-aos-easing="linear">
-                Let us know about your arrival & departure dates, as well as what type of activities would you be
-                interested in:
+              <h1 class="title has-text-centered section-title form-title" data-aos="fade-up" data-aos-easing="linear" data-en="Let us know about your arrival & departure dates, as well as what type of activities would you be interested in:" data-fr="Faites-nous part de vos dates d'arrivée et de départ, ainsi que du type d'activités qui vous intéresseraient:">
+                Let us know about your arrival & departure dates, as well as what type of activities would you be interested in:
               </h1>
               <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="column is-12"
                 data-aos="fade-up" data-aos-easing="linear">
                 <div class="field">
                   <div class="control">
-                    <label class="label section-title form-title" for="names">Your Names</label>
+                    <label class="label section-title form-title" for="names" data-en="Your Names" data-fr="Vos noms">Your Names</label>
                     <input class="input" type="text" name="names" placeholder="Your names" id="names">
                   </div>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <label class="label section-title form-title" for="datetimes">Your Arrival & Departure</label>
+                    <label class="label section-title form-title" for="datetimes" data-en="Your Arrival & Departure" data-fr="Votre arrivée et votre départ">Your Arrival & Departure</label>
                     <input class="input" type="text" name="datetimes" id="datetimes">
                   </div>
                 </div>
                 <div class="field">
-                  <p class="label section-title form-title has-text-left">
+                  <p class="label section-title form-title has-text-left" data-en="Your Attendence" data-fr="Votre présence">
                     Your Attendence
                   </p>
                   <div class="control">
                     <label class="b-checkbox checkbox is-medium" for="cityhall">
                       <input type="checkbox" name="cityhall" id="cityhall">
                       <span class="check"></span>
-                      <span class="control-label">City Hall</span>
+                      <span class="control-label" data-en="City Hall" data-fr="L'hôtel de ville">City Hall</span>
                     </label>
                   </div>
                   <div class="control">
                     <label class="b-checkbox checkbox is-medium" for="vinhonneur">
                       <input type="checkbox" name="vinhonneur" id="vinhonneur">
                       <span class="check"></span>
-                      <span class="control-label">Vin d'honneur</span>
+                      <span class="control-label" data-en="Celebratory drinks" data-fr="Vin d'honneur">Celebratory drinks</span>
                     </label>
-                    <span class="tag">
+                    <span class="tag" data-en="Short reception between the wedding ceremony and the wedding dinner. It comes in the form of a cocktail or an aperitif." data-fr="Courte réception entre la cérémonie de mariage et le dîner de mariage. Il se présente sous forme de cocktail ou d'apéritif.">
                       Short reception between the wedding ceremony and the wedding dinner. It comes in the form of a cocktail or an aperitif.
                     </span>
                   </div>
@@ -599,14 +604,14 @@
                     <label class="b-checkbox checkbox is-medium" for="toahotu">
                       <input type="checkbox" name="toahotu" id="toahotu">
                       <span class="check"></span>
-                      <span class="control-label">Domaine To'a Hotu</span>
+                      <span class="control-label" data-en="Villa To'a Hotu" data-fr="Domaine To'a Hotu">Villa To'a Hotu</span>
                     </label>
                   </div>
                   <div class="control">
                     <label class="b-checkbox checkbox is-medium" for="not-coming">
                       <input type="checkbox" name="not-coming" id="not-coming">
                       <span class="check"></span>
-                      <span class="control-label">Not attending, sorry!</span>
+                      <span class="control-label" data-en="Not attending, sorry!" data-fr="Je ne suis pas présent, désolé!">Not attending, sorry!</span>
                     </label>
                   </div>
                 </div>
@@ -616,7 +621,7 @@
                     <input class="input" type="text" name="allergies" placeholder="Your allergies" id="allergies">
                   </div>
                 </div>
-                <p class="label section-title form-title has-text-left">
+                <p class="label section-title form-title has-text-left" data-en="Activities" data-fr="Activités">
                   Activities
                 </p>
                 <div class="field">
@@ -624,9 +629,9 @@
                     <label class="b-checkbox checkbox is-medium" for="scuba">
                       <input type="checkbox" name="scuba" id="scuba">
                       <span class="check"></span>
-                      <span class="control-label">Scuba Diving</span>
+                      <span class="control-label" data-en="Scuba Diving" data-fr="Plongée sous-marine">Scuba Diving</span>
                     </label>
-                    <span class="tag">
+                    <span class="tag" data-en="Baptem (no previous experience required)" data-fr="Baptem (aucune expérience préalable requise)">
                       Baptem (no previous experience required)
                     </span>
                   </div>
@@ -641,9 +646,9 @@
                     <label class="b-checkbox checkbox is-medium" for="boat">
                       <input type="checkbox" name="boat" id="boat">
                       <span class="check"></span>
-                      <span class="control-label">Renting a boat</span>
+                      <span class="control-label" data-en="Renting a boat" data-fr="Louer un bateau">Renting a boat</span>
                     </label>
-                    <span class="tag">
+                    <span class="tag" data-en="Lagoon exploration" data-fr="Exploration du lagon">
                       Lagoon exploration
                     </span>
                   </div>
@@ -653,7 +658,7 @@
                       <span class="check"></span>
                       <span class="control-label">Safari 4x4</span>
                     </label>
-                    <span class="tag">
+                    <span class="tag" data-en="Group ride through island's interior" data-fr="Balade en groupe à l'intérieur de l'île">
                       Group ride through island's interior
                     </span>
                   </div>
@@ -661,7 +666,7 @@
                     <label class="b-checkbox checkbox is-medium" for="island_tour">
                       <input type="checkbox" name="island_tour" id="island_tour">
                       <span class="check"></span>
-                      <span class="control-label">Tour of the island</span>
+                      <span class="control-label" data-en="Tour of the island" data-fr="Tour de l'île">Tour of the island</span>
                     </label>
                   </div>
                   <div class="control">
@@ -670,7 +675,7 @@
                       <span class="check"></span>
                       <span class="control-label">O Belvédère</span>
                     </label>
-                    <span class="tag">
+                    <span class="tag" data-en="A restaurant on top of the mountain" data-fr="Un restaurant au sommet de la montagne">
                       A restaurant on top of the mountain
                     </span>
                   </div>
@@ -678,9 +683,9 @@
                     <label class="b-checkbox checkbox is-medium" for="hike_miri">
                       <input type="checkbox" name="hike_miri" id="hike_miri">
                       <span class="check"></span>
-                      <span class="control-label">Miri Hike</span>
+                      <span class="control-label" data-en="Miri Hike" data-fr="Randonnée Miri">Miri Hike</span>
                     </label>
-                    <span class="tag">
+                    <span class="tag" data-en="A short hike (1h30min) with a panoramic view" data-fr="Une petite randonnée (1h30min) avec vue panoramique">
                       A short hike (1h30min) with a panoramic view
                     </span>
                   </div>
@@ -688,9 +693,9 @@
                     <label class="b-checkbox checkbox is-medium" for="hike_marau">
                       <input type="checkbox" name="hike_marau" id="hike_marau">
                       <span class="check"></span>
-                      <span class="control-label">Marau Summit Hike</span>
+                      <span class="control-label" data-en="Marau Summit Hike<" data-fr="Randonnée au sommet de Marau">Marau Summit Hike</span>
                     </label>
-                    <span class="tag">
+                    <span class="tag" data-en="A long hike (4h) with spectacular views" data-fr="Une longue randonnée (4h) avec des vues spectaculaires">
                       A long hike (4h) with spectacular views
                     </span>
                   </div>
@@ -702,7 +707,7 @@
                 </div>
                 <div class="field">
                   <div class="control">
-                    <label class="label section-title form-title" for="message">Additional message</label>
+                    <label class="label section-title form-title" for="message" data-en="Additional message" data-fr="Message supplémentaire">Additional message</label>
                     <textarea
                       class="textarea"
                       placeholder="Additional message to us"
@@ -713,7 +718,7 @@
                 </div>
                 <div class="field">
                   <div class="control">
-                    <button type="submit" class="button btn-cta">Send</button>
+                    <button type="submit" class="button btn-cta" data-en="Send" data-fr="Envoyer">Send</button>
                   </div>
                 </div>
               </form>
@@ -724,7 +729,7 @@
               <img src="image/tahitian-gardenia.png" class="divider" alt="~~~">
             </div>
             <div class="space40px"></div>
-            <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+            <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear" data-en="Our social media" data-fr="Nos réseaux sociaux">
               Our social media
               <br>
               <a class="instagram" href="https://instagram.com/karinoux_tahiti" target="_blank"

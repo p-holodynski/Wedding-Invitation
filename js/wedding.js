@@ -1,5 +1,7 @@
-// Get that hamburger menu cookin' //
+// Global variables
+let currentLanguage = 'en';  // Default language
 
+// Get that hamburger menu cookin' //
 document.addEventListener("DOMContentLoaded", function() {
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(
@@ -19,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         $target.classList.toggle("is-active");
       });
     });
-  }
+  };
 });
 
 // Smooth Anchor Scrolling
@@ -50,6 +52,29 @@ function scrollFunction() {
     document.getElementById("toTop").style.opacity = "0";
   }
 }
+
+$("#changeLanguage").on('click', function(e) {
+  currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
+  updateLanguage(currentLanguage);
+});
+
+function updateLanguage(language) {
+  const elements = document.querySelectorAll('[data-en]');
+  
+  elements.forEach(element => {
+      element.textContent = element.getAttribute(`data-${language}`);
+  });
+
+  // Optionally save the language preference in local storage
+  localStorage.setItem('preferredLanguage', language);
+};
+
+// Load the preferred language from local storage if available
+let savedLanguage = localStorage.getItem('preferredLanguage');
+if (savedLanguage) {
+  currentLanguage = savedLanguage;
+  updateLanguage(currentLanguage);
+};
 
 // Preloader
 $(document).ready(function($) {
