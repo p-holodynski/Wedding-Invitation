@@ -6,13 +6,15 @@
 
 (function ($) {
 	$.fn.countdown = function (options, callback) {
+		let savedLanguage = localStorage.getItem('preferredLanguage') ?? 'en';
+
 		var settings = $.extend({
 			date: null,
 			offset: null,
-			day: 'Day',
-			days: 'Days',
-			hour: 'Hour',
-			hours: 'Hours',
+			day: (savedLanguage == 'en') ? 'Day' : 'Jour',
+			days: (savedLanguage == 'en') ? 'Days' : 'Jours',
+			hour: (savedLanguage == 'en') ? 'Hour' : 'Heure',
+			hours: (savedLanguage == 'en') ? 'Hours' : 'Heures',
 			minute: 'Minute',
 			minutes: 'Minutes',
 			second: 'Second',
@@ -81,6 +83,19 @@
 				minutes = Math.floor((difference % _hour) / _minute),
 				seconds = Math.floor((difference % _minute) / _second);
 
+			let savedLanguage = localStorage.getItem('preferredLanguage') ?? 'en';
+			if (savedLanguage == 'en') {
+				settings.day = 'Day';
+				settings.days = 'Days';
+				settings.hour = 'Hour';
+				settings.hours = 'Hours';
+			}
+			if (savedLanguage == 'fr') {
+				settings.day = 'Jour';
+				settings.days = 'Jours';
+				settings.hour = 'Heure';
+				settings.hours = 'Heures';
+			}
 			// based on the date change the refrence wording
 			var text_days = (days === 1) ? settings.day : settings.days,
 				text_hours = (hours === 1) ? settings.hour : settings.hours,
