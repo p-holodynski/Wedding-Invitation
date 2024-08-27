@@ -656,6 +656,7 @@ body.preloader-site {
 
 article.tile {
   display: flex;
+  padding: 10px;
 }
 
 .tile .content {
