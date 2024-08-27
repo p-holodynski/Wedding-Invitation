@@ -525,6 +525,38 @@ vertical-align: middle;
   }
 }
 
+#changeLanguage::before, #changeLanguage::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  border: 1px solid #fff;
+  animation: clippath 8s infinite linear;
+}
+
+#changeLanguage::after {
+  animation: clippath 8s infinite -4s linear;
+}
+
+@keyframes clippath {
+  0%,
+    100% {
+        clip-path: inset(0 0 98% 0);
+    }
+    
+    25% {
+        clip-path: inset(0 98% 0 0);
+    }
+    50% {
+        clip-path: inset(98% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 98%);
+    }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   background-color: #d9b380;
