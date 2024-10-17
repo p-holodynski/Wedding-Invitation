@@ -744,6 +744,14 @@ article.tile {
   min-height: 24rem;
 }
 
+.foto7 {
+  background-image: linear-gradient(rgba(95, 2, 2, 0.1), rgba(48, 47, 47, 0.9)), url("../image/Engagement-2024-10-16.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 24rem;
+}
+
 .title-foto {
   font-size: 18pt;
   font-family: 'Lato', sans-serif;
