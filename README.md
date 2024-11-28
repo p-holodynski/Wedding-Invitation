@@ -12,3 +12,4 @@
 # Stack
 - Netlify (https://netlify.com)
 - Bulma CSS (https://bulma.io)
+- AOS JS (https://michalsnik.github.io/aos)
